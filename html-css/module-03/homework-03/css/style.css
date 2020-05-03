@@ -1,0 +1,128 @@
+html { 
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    /*outline: 2px solid red;*/
+} 
+body {
+    font-family: "Playfair Display", serif;
+    color: rgb(98, 98, 98);
+    font-weight: 400;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+nav {
+    padding: 72px 0 98px;
+}
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/*site-navigation*/
+
+.site-navigation {
+    display: block;  /* inline-block слетает все в влево при включении.*/
+    margin: 0 auto;
+    padding: 0;
+    font-size: 0;
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+.site-navigation li {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.site-navigation a:not(:last-child) {
+    margin-right: 100px;
+}
+
+.site-navigation a {
+    display: inline-block;
+    color: rgb(98, 98, 98);
+    text-decoration: none;
+    padding: 0 50px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #03a9f4;
+}
+
+/* main-container*/
+.main-content {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    font-size: 0;
+}
+.main-content img {
+    margin-bottom: 30px;
+}
+
+.main-content-item {
+    display: inline-block;
+    width: 420px;
+    margin-right: 60px;
+    margin-bottom: 128px;
+}   
+
+.main-content-item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.main-content-item h2 {
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(180, 173, 158);
+    line-height: 17px;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+}
+
+.main-content-item h3 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(98, 98, 98);
+    line-height: 36px;
+    margin-bottom: 33px;
+}
+
+.main-content-item p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(98, 98, 98);
+    text-align: left;
+    line-height: 24px;     
+}
+
+/* load more button */
+.load-more-button{
+    display: block;
+    border: 1px solid black;
+    margin: 0 auto 21px;
+    padding: 16px 29px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    background-color:#ffffff;
+    color: rgb(98, 98, 98);
+    cursor: pointer;
+    }     
