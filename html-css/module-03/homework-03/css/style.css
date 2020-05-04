@@ -30,14 +30,11 @@ nav {
 /*site-navigation*/
 
 .site-navigation {
-    display: block;  /* inline-block слетает все в влево при включении.*/
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     font-size: 0;
-    list-style: none;
     text-transform: uppercase;
     text-align: center;
-    vertical-align: middle;
   }
 
 .site-navigation li {
@@ -68,7 +65,9 @@ nav {
     margin: 0;
     padding: 0; 
     font-size: 0;
+    margin-bottom: 128px;
 }
+
 .main-content img {
     margin-bottom: 30px;
 }
@@ -84,7 +83,11 @@ nav {
     margin-right: 0;
 }
 
-.main-content-item h2 {
+.main-content-item:nth-last-child(-n+2){
+    margin-bottom: 0;
+}
+
+.under-photo-titile {
     margin: 0;
     font-family: "Ubuntu", sans-serif;
     font-size: 14px;
@@ -104,7 +107,7 @@ nav {
     margin-bottom: 33px;
 }
 
-.main-content-item p {
+.content-text {
     margin: 0;
     font-size: 14px;
     font-weight: 400;
@@ -117,7 +120,7 @@ nav {
 .load-more-button{
     display: block;
     border: 1px solid black;
-    margin: 0 auto 21px;
+    margin: 0 auto;
     padding: 16px 29px;
     font-size: 20px;
     line-height: 24px;
@@ -125,4 +128,12 @@ nav {
     background-color:#ffffff;
     color: rgb(98, 98, 98);
     cursor: pointer;
-    }     
+}     
+
+section {
+    padding-bottom: 70px;
+}
+.load-more-button a:hover,
+.load-more-button a:focus {
+    color: #03a9f4;
+}
