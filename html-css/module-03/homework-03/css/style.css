@@ -35,7 +35,7 @@ nav {
     font-size: 0;
     text-transform: uppercase;
     text-align: center;
-  }
+}
 
 .site-navigation li {
     display: inline-block;
@@ -87,7 +87,7 @@ nav {
     margin-bottom: 0;
 }
 
-.under-photo-titile {
+.under-photo-title {
     margin: 0;
     font-family: "Ubuntu", sans-serif;
     font-size: 14px;
