@@ -37,8 +37,8 @@ img {
     /* NAVAIGATION */
 
 .page-header {
-        margin-bottom: 70px;
-        padding: 38px 0;
+    margin-bottom: 70px;
+    padding: 38px 0;
 }
 
 .logo {
@@ -117,6 +117,7 @@ h2::after {
     margin: 0;
     padding: 0;
     margin-bottom: 100px;
+    text-decoration: none;
 }
 
 .catalog-list li {
@@ -139,11 +140,6 @@ h2::after {
     background-size: cover;
 }   
 
-.catalog-list a {
-    text-decoration: none;
-    
-}
-
 .product-name-container {
     background-color: #323232;
     font-size: 18px;
@@ -154,8 +150,10 @@ h2::after {
     font-family: "Roboto";
     font-weight: 900;
     color: #ffffff;
+    text-transform: uppercase;
 }
-.catalog-list p {
+
+.catalog-list h3 {
     float: left;
     margin: 0;
     padding: 0;
@@ -178,6 +176,4 @@ h2::after {
     background-color: #1abc9c;
 }
 
-.catalog-item-image {
-    display: block;
-}
+    /* Latest news */
