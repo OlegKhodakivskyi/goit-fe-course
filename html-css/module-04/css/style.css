@@ -153,7 +153,7 @@ h2::after {
     text-transform: uppercase;
 }
 
-.catalog-list h3 {
+.catalog-list p {
     float: left;
     margin: 0;
     padding: 0;
