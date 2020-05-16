@@ -1,0 +1,183 @@
+html { 
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    /*outline: 2px solid red;*/
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans";
+    color: #555252;
+    font-weight: 400;
+    }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+    /* NAVAIGATION */
+
+.page-header {
+        margin-bottom: 70px;
+        padding: 38px 0;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-weight: 400;
+    color: #555252;
+    text-decoration: none;
+}
+
+.logo::first-letter {
+    color: rgb(26, 188, 156);
+    font-weight: 900;
+}
+
+.menu {
+    float: right;
+    width: 470px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 7px;
+}
+.menu li {
+    float: left;
+}
+
+.menu a {
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    font-weight: 700;
+    color: #0f0101;
+    text-decoration: none;
+}
+
+.menu li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.menu a:hover,
+.menu a:focus {
+    color: rgb(26, 188, 156);
+}
+
+     /* Featured products */
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+    font-family: "Roboto";
+    color: rgb(81, 81, 81);
+    text-transform: uppercase;
+    line-height: 58px;
+    text-align: center;
+    margin-bottom: 93px;
+    letter-spacing: -0.02em;
+}
+
+h2::after {
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color: rgb(26, 188, 156);
+    content: '';
+    margin: 27px 473px 0;
+}
+
+.catalog-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 100px;
+}
+
+.catalog-list li {
+    float: left;
+    background-color: #e9f0fd;
+}
+
+.catalog-list li:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+.catalog-list li:nth-child(-n+4) {
+    margin-bottom: 30px;
+}
+
+.catalog-list img {
+    display: block;
+    height: 283px;
+    background-position: center;
+    background-size: cover;
+}   
+
+.catalog-list a {
+    text-decoration: none;
+    
+}
+
+.product-name-container {
+    background-color: #323232;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    width: 255px;
+    height: 40px;
+    font-family: "Roboto";
+    font-weight: 900;
+    color: #ffffff;
+}
+.catalog-list p {
+    float: left;
+    margin: 0;
+    padding: 0;
+    padding-left: 14px;
+    height: 40px;
+    padding-top: 5px;
+}
+
+.catalog-list span {
+    float: right;
+    width: 54px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.44);
+    padding-top: 5px;
+    text-align: center;
+}
+
+.catalog-list li:hover .product-name-container,
+.catalog-list li:focus .product-name-container {
+    background-color: #1abc9c;
+}
+
+.catalog-item-image {
+    display: block;
+}
