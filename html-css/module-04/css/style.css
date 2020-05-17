@@ -91,19 +91,20 @@ img {
 
      /* Featured products */
 
-     .section-container { 
+.section-container { 
         padding-bottom: 100px;
 }
 
-h2 {
+.section-title {
     font-size: 48px;
     font-family: "Roboto";
     color: #515151;
     text-transform: uppercase;
     line-height: 58px;
     text-align: center;
-    margin-bottom: 93px;
     letter-spacing: -0.02em;
+    margin: 0;
+    margin-bottom: 93px;
 }
 
 h2::after {
