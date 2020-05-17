@@ -70,6 +70,7 @@ img {
 }
 
 .menu a {
+    display: block;
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
@@ -90,9 +91,11 @@ img {
 
      /* Featured products */
 
+     .section-container { 
+        padding-bottom: 100px;
+}
+
 h2 {
-    margin: 0;
-    padding: 0;
     font-size: 48px;
     font-family: "Roboto";
     color: #515151;
@@ -116,7 +119,6 @@ h2::after {
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-bottom: 100px;
     text-decoration: none;
 }
 
@@ -140,6 +142,9 @@ h2::after {
     background-size: cover;
 }   
 
+.catalog-list a {
+    display: block;
+}
 .product-name-container {
     background-color: #323232;
     font-size: 18px;
@@ -194,8 +199,8 @@ h4::after {
     margin: 0;
     padding: 0;
     list-style: none;
-    margin-bottom: 83px;
 }
+
 .latest-news-list li {
     float: left;
     width: 350px;
@@ -213,8 +218,6 @@ h4::after {
 }
 
 .latest-news-list h4 {
-    margin: 0;
-    padding: 0;
     font-family: "Open Sans";
     font-weight: 600;
     font-size: 18px;
@@ -224,8 +227,6 @@ h4::after {
 }
 
 .latest-news-list p {
-    margin: 0;
-    padding: 0;
     font-family: "Open Sans";
     font-weight: 400;
     font-size: 14px;
@@ -233,6 +234,7 @@ h4::after {
     margin-bottom: 14px;
     letter-spacing: -0.02em;
 }
+
     /* Bottom  */
 
 .read-more-button { 
