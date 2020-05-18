@@ -47,7 +47,7 @@ img {
     line-height: 32px;
     text-transform: uppercase;
     font-family: "Roboto";
-    font-weight: 400;
+    font-weight: 300;
     color: #555252;
     text-decoration: none;
 }
@@ -164,7 +164,6 @@ h2::after {
     font-weight: 900;
     float: left;
     margin: 0;
-    padding: 0;
     padding-left: 14px;
     height: 40px;
     padding-top: 5px;
@@ -258,3 +257,4 @@ h4::after {
 .read-more-button:focus {
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.39);
 }
+
