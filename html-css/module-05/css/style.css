@@ -96,6 +96,11 @@ img {
     position: relative;
 }
 
+.image {
+    object-fit: cover;
+    width: 100%;
+}
+
 .image::before {
     content: "";
     position: absolute;
@@ -110,7 +115,7 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50% );
+    transform: translate(-50%, -50% );
 }
 
 .slider-cntrl {
@@ -127,27 +132,23 @@ img {
 
 .slider-cntrl-prev {
     left: 0;
-    top: 50%;
+    top: -20%;
+    transform: translateY(50%);
     background-image: url(../image/icons/icon-prev.png);
 }   
 
 .slider-cntrl-next { 
     right: 0;
-    top:50%;
+    top: -20%;
+    transform: translateY(50%);
     background-image: url(../image/icons/icon-next.png);
 }
 
 .slider-description {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 738px;
-    height: 98px;
+    padding: 0 180px;
 }
 
 .banner-title {
-    position: absolute;
     font-size: 60px;
     line-height: 82px;
     font-weight: 900;
@@ -158,7 +159,6 @@ img {
 }
 
 .banner-description { 
-    position: absolute;
     font-size: 24px;
     line-height: 54px;
     font-weight: 300;
