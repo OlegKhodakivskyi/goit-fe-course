@@ -256,6 +256,59 @@ img {
     visibility: visible;
 }
 
+.overlay-buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.like, .cross, .clock {
+    border: none;
+    border: 1px solid #ffffff;
+    width: 48px;
+    height: 48px;
+    color: #ffffff;
+    cursor: pointer;
+    background: transparent;
+}
+
+.add {
+    width: 164px;
+    height: 48px;
+    background-color: #323232;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+}
+
+.overlay-buttons-item {
+    float: left;
+    list-style: none;
+}
+
+.overlay-buttons-item:not(:nth-last-child(-n + 2)) {
+    margin-right: 10px;
+}
+
+.overlay-buttons-item:not(:last-child) {
+    margin-bottom: 7px;
+}
+
+.overlay-buttons button:hover,
+.overlay-buttons button:focus {
+background-color: #1abc9c;
+border: none;
+}
+
+.overlay-buttons img {
+    background-size: cover;
+}
 
 .overlay {
     position: absolute;
@@ -279,7 +332,7 @@ img {
 .footer p {
     font-size: 16px;
     font-weight: 400;
-    font-family: "OpenSans";
+    font-family: "OpenSans", serif;
     color: #fefefe;
     line-height: 28px;
     text-align: center;
