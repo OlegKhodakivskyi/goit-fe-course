@@ -88,9 +88,7 @@ img {
     color: #1abc9c;
 }
 
-
     /* SLIDER */
-
 
 .section-slider {
     position: relative;
@@ -277,12 +275,6 @@ img {
     width: 164px;
     height: 48px;
     background-color: #323232;
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    line-height: 32px;
-    font-weight: 400;
-    letter-spacing: -0.28px;
-    text-transform: uppercase;
     cursor: pointer;
     border: 1px solid #ffffff;
 }
@@ -307,7 +299,7 @@ border: none;
 }
 
 .overlay-buttons img {
-    background-size: cover;
+    margin-left: 7px;
 }
 
 .overlay {
@@ -359,5 +351,5 @@ border: none;
     padding: 0;
     overflow: hidden;
     border: 0;
-    clip: rect(0 0 0 0)
+    clip: rect(0 0 0 0),
 }
