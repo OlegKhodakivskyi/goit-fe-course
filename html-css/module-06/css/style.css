@@ -93,7 +93,7 @@ ol, ul {
     height: 3px;
     background-color: #f38181;
     margin: 12px auto 0;
-    transition: all 1s linear;
+    transition: all 200ms linear;
     opacity: 0;
     visibility: hidden;
 }
@@ -109,7 +109,7 @@ ol, ul {
     display: block;
     content: "";
     color: #f38181;
-    transition: all 1s linear;
+    transition: all 200ms linear;
 }
 
     /* SERVICE-SECTION */
@@ -267,7 +267,7 @@ h2::after {
 .team-member:hover .team-member-image,
 .team-member:focus .team-member-image {
     transform: translate(-10px, -10px);
-    transition: all .2s ease;
+    transition: all 200ms ease;
     box-shadow: 10px 10px #95e1d3;
 }
 
@@ -282,6 +282,7 @@ h2::after {
     width: 56px;
     height: 56px;
     background-color: #fce38a;
+    transition: all 200ms ease;
 }
 
 .social-list-link:not(:last-child) {
