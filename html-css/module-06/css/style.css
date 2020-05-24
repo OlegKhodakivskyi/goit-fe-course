@@ -218,7 +218,8 @@ h2::after {
     padding: 0 130px;
     font-family: var(--font-roboto);
     font-weight: var(--regular);
-    font-style: 15px;
+    font-size: 15px;
+    line-height: 24px;
     color: #999999;
     margin-bottom: 94px;
 }
@@ -312,7 +313,6 @@ h2::after {
     margin-bottom: 14px;
     font-family: var(--font-monts);
     font-weight: var(--regular);
-    line-height: 1.2;
     text-transform: uppercase;
 }
 
@@ -325,3 +325,62 @@ h2::after {
 
     /* FOOTER */
 
+.footer { 
+    padding-bottom: 12px;
+}
+
+.footer::before {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #e5e5e5;
+    margin-bottom: 10px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-monts);
+    font-size: 14px;
+    font-weight: var(--regular);
+}
+
+.footer-text {
+    display: flex;
+    align-items: center;
+}
+
+.designer-page {
+    color: #f38181;
+}
+
+.subscribe {
+    display: flex;
+}
+
+input{
+    font-size: 15px;
+    font-family: var(--font-roboto);
+    line-height: 24px;
+    text-align: left;     
+    padding: 0 12px;
+    border: none;
+    border: 1px solid #e7e7e7;
+    font-weight: var(--light);
+}
+
+::placeholder {
+    color: #cccccc;
+}
+
+.subscribe-btn {
+    font-family: var(--font-monts);
+    font-weight: var(--bold);
+    border: none;
+    padding: 12px 44px;
+    background-color: #95e1d3;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
