@@ -2,6 +2,9 @@
     --font-monts:'Montserrat', sans-serif;
     --font-roboto: 'Roboto', sans-serif;
     --font-Kaushan: 'Kaushan Script', cursive;
+    --bold: 700;
+    --regular: 400;
+    --light: 300;
 }
 
 html { 
@@ -112,18 +115,21 @@ ol, ul {
 .section-title { 
     display: block;
     text-align: center;
-    font-family: var(--font-Kaushan);
-    font-size: 24px;
-    line-height: 1.2;
+    text-transform: uppercase;
+    font-family: var(--font-monts);
+    font-size: 30px;
+    font-weight: var(--bold);
 }
 
 .section-title-new-line {
     display: block;
     text-align: center;
-    text-transform: uppercase;
-    font-family: var(--font-monts);
-    font-size: 30px;
-    font-weight: 700;
+    font-family: var(--font-Kaushan);
+    font-weight: var(--regular);
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-transform: none;
 }
 
 h2::after {
