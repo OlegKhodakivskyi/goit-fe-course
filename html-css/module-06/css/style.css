@@ -5,6 +5,7 @@
     --bold: 700;
     --regular: 400;
     --light: 300;
+    --gradient: linear-gradient(to top , rgba(252,227,138, 0.9) 0%, rgb(243,129,129, 0.9) 100%);
 }
 
 html { 
@@ -28,6 +29,7 @@ body {
     font-weight: 400;
     font-family: var(--font-roboto);
     line-height: 1.2;
+    color: #333333;
 }
 
 img {
@@ -112,6 +114,10 @@ ol, ul {
 
     /* SERVICE-SECTION */
 
+.section-team {
+    padding-bottom: 86px;
+}
+
 .section-title { 
     display: block;
     text-align: center;
@@ -119,6 +125,8 @@ ol, ul {
     font-family: var(--font-monts);
     font-size: 30px;
     font-weight: var(--bold);
+    color: #333333;
+    margin-bottom: 64px;
 }
 
 .section-title-new-line {
@@ -128,6 +136,7 @@ ol, ul {
     font-weight: var(--regular);
     font-size: 24px;
     line-height: 1.2;
+    color: #333333;
     margin-bottom: 20px;
     text-transform: none;
 }
@@ -140,3 +149,179 @@ h2::after {
     background-color: #f38181;
     margin: 12px auto 0;
 }
+
+.service-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+.service-list li {
+    flex-basis: calc((100% - 40px)/3);
+    padding: 0px 0 0 80px;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-position-x: 22px;
+    border: none;
+    width: 80px;
+    height: 80px;
+}
+
+.service-list li:nth-child(-n+3) {
+    margin-bottom: 100px;
+}
+
+.service-list-item-title {
+    font-family: var(--font-monts);
+    font-weight: var(--regular);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.service-list-item-description {
+    font-family: var(--font-roboto);
+    font-weight: var(--regular);
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+}
+
+.clock {
+    background-image: url(../image/icons/icon-clock.png);
+}
+
+.web-design {
+    background-image: url(../image/icons/icon-web-design.png);
+}
+
+.creativity {
+    background-image: url(../image/icons/icon-creativity.png);
+}
+
+.seo {
+    background-image: url(../image/icons/icon-seo.png);
+}
+
+.css-html {
+    background-image: url(../image/icons/icon-css-html.png);
+}
+
+.digital {
+    background-image: url(../image/icons/icon-digital.png);
+}
+
+     /* TEAM SECTION */
+.team-description { 
+    display: block;
+    text-align: center;
+    padding: 0 130px;
+    font-family: var(--font-roboto);
+    font-weight: var(--regular);
+    font-style: 15px;
+    color: #999999;
+    margin-bottom: 94px;
+}
+
+.our-team-members {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-member {
+    width: calc((100% - 64px)/3);
+    text-align: center;
+}
+
+.team-member-image {
+    position: relative;
+}
+
+.team-member:hover .overlay,
+.team-member:focus .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient);
+    background-clip: padding-box;
+    border: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.team-member-image {
+    margin-bottom: 30px;
+}
+
+.team-member:hover .team-member-image,
+.team-member:focus .team-member-image {
+    transform: translate(-10px, -10px);
+    transition: all .2s ease;
+    box-shadow: 10px 10px #95e1d3;
+}
+
+.social-list {
+    display: flex;
+}
+
+.social-list a{
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 56px;
+    height: 56px;
+    background-color: #fce38a;
+}
+
+.social-list-link:not(:last-child) {
+    margin-right: 1px;
+}
+
+.social-list-link a:hover,
+.social-list-link a:focus {
+    background-color: #95e1d3;
+}
+
+.social-link-facebook { 
+    background-image: url(../image/icons/icon-facebook.png);
+}
+
+.social-link-twitter {
+    background-image: url(../image/icons/icon-tweet.png);
+}
+
+.social-link-p {
+    background-image: url(../image/icons/icon-p.png);
+}
+
+.social-link-instagram {
+    background-image: url(../image/icons/icon-instagram.png);
+}
+
+.our-team-members h4 {
+    margin-bottom: 14px;
+    font-family: var(--font-monts);
+    font-weight: var(--regular);
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.our-team-members p {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: var(--light);
+    color: #999999;
+}
+
+    /* FOOTER */
+
