@@ -43,6 +43,11 @@ img {
     margin: 0 auto;
 }
 
+.container-footer {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 a {
     text-decoration: none;
 }
@@ -66,6 +71,7 @@ ol, ul {
 .logo {
     font-size: 30px;
     color: #95e1d3;
+    font-family: var(--font-monts);
     font-weight: 700;
     text-transform: uppercase;
     text-align: left;
@@ -177,6 +183,7 @@ h2::after {
     font-weight: var(--regular);
     font-size: 14px;
     margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 .service-list-item-description {
@@ -212,10 +219,12 @@ h2::after {
 }
 
      /* TEAM SECTION */
+
 .team-description { 
     display: block;
     text-align: center;
-    padding: 0 130px;
+    max-width: 945px;
+    margin: 0 auto;
     font-family: var(--font-roboto);
     font-weight: var(--regular);
     font-size: 15px;
@@ -236,6 +245,7 @@ h2::after {
 
 .team-member-image {
     position: relative;
+    transition: all 200ms ease;
 }
 
 .team-member:hover .overlay,
@@ -267,7 +277,6 @@ h2::after {
 .team-member:hover .team-member-image,
 .team-member:focus .team-member-image {
     transform: translate(-10px, -10px);
-    transition: all 200ms ease;
     box-shadow: 10px 10px #95e1d3;
 }
 
@@ -322,6 +331,7 @@ h2::after {
     line-height: 24px;
     font-weight: var(--light);
     color: #999999;
+    font-style: italic;
 }
 
     /* FOOTER */
@@ -330,7 +340,7 @@ h2::after {
     padding-bottom: 12px;
 }
 
-.footer::before {
+.container-footer::before {
     display: block;
     content: "";
     height: 1px;
@@ -342,19 +352,21 @@ h2::after {
 .footer-info {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     font-family: var(--font-monts);
     font-size: 14px;
     font-weight: var(--regular);
 }
 
 .footer-text {
-    display: flex;
-    align-items: center;
+    padding-top: 10px;
 }
 
 .designer-page {
     color: #f38181;
 }
+
+    /* SUBSCRIBE-BUTTON */
 
 .subscribe {
     display: flex;
@@ -369,6 +381,7 @@ input{
     border: none;
     border: 1px solid #e7e7e7;
     font-weight: var(--light);
+    font-style: italic;
 }
 
 ::placeholder {
@@ -385,3 +398,4 @@ input{
     text-transform: uppercase;
     cursor: pointer;
 }
+
