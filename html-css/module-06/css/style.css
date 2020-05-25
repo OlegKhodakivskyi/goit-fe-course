@@ -340,7 +340,7 @@ h2::after {
     padding-bottom: 12px;
 }
 
-.container-footer::before {
+.footer-info::before {
     display: block;
     content: "";
     height: 1px;
@@ -353,13 +353,10 @@ h2::after {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: baseline;
     font-family: var(--font-monts);
     font-size: 14px;
     font-weight: var(--regular);
-}
-
-.footer-text {
-    padding-top: 10px;
 }
 
 .designer-page {
