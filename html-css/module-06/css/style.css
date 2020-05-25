@@ -43,11 +43,6 @@ img {
     margin: 0 auto;
 }
 
-.container-footer {
-    width: 1200px;
-    margin: 0 auto;
-}
-
 a {
     text-decoration: none;
 }
@@ -55,7 +50,6 @@ a {
 ol, ul {
     list-style: none;
 }
-
 
     /* NAVIGATIN-MENU  */
 
