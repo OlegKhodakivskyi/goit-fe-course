@@ -258,15 +258,23 @@ ol, ul {
 .contact-form-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 28px;
-    flex-basis: 940px;
+    flex-wrap: wrap;
+    
+    width: 940px;
+}
+
+.contact-form-input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 455px;    
 }
 
 .contact-form-input {
-    
-    flex-basis: 455px;
+    width: 455px;
+    margin-bottom: 28px;
 }
 
 .contact-form-message {
-    flex-basis: 455px;
+    width: 455px;
 }
