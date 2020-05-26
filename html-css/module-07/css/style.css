@@ -170,7 +170,7 @@ ol, ul {
 
 .section-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .section-list-items {
@@ -283,7 +283,6 @@ ol, ul {
 
 .contact-form-message {
     width: 455px;
-    height: 218px;
     border: 1px solid #cccccc;
     border-radius: 5px;
     background-color: #ffffff;
@@ -320,7 +319,7 @@ ol, ul {
 }
 
     /* SEND-BUTTON */
-    
+
 .send-btn {
     border: none;
     border-radius: 3px;
