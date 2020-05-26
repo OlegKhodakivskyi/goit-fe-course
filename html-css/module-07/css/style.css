@@ -231,7 +231,7 @@ ol, ul {
     background-repeat: no-repeat;
     background-position: right bottom;
     background-image: url(../image/background-map.png);
-    padding-bottom: 115px;
+    padding: 108px 0 116px;
 }
 
 .section-contact-us h2 {
@@ -259,22 +259,78 @@ ol, ul {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
-    width: 940px;
 }
 
-.contact-form-input-wrapper {
+.contact-form {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-basis: 100%;  
+    margin-bottom: 30px;
+}
+.contact-form-input-wrapper {
     width: 455px;    
 }
 
 .contact-form-input {
     width: 455px;
-    margin-bottom: 28px;
+    height: 54px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding-left: 16px;
 }
 
 .contact-form-message {
     width: 455px;
+    height: 218px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 16px 0 0 16px;
+    resize: none;
+}
+
+.contact-form-input:not(:last-child) {
+    margin-bottom: 28px;
+}
+
+::placeholder {
+    font-size: 14px;
+    font-family: var(--main-font);
+    color: #bbbbbb;
+    font-weight: 700;
+    text-align: left;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+:required:focus {
+    outline: none;
+}
+
+.contact-form-input:required:focus:valid,
+.contact-form-message:required:focus:valid {
+    border: 1px solid #36fe51;
+}
+
+.contact-form-input:required:focus:invalid,
+.contact-form-message:required:focus:invalid {
+    border: 1px solid #ff0000;
+}
+
+.send-btn {
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(254, 209, 54);
+    width: 240px;
+    height: 66px;
+    font-family: var(--main-font);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 24px 20px;
+    margin: 0 auto;
 }
