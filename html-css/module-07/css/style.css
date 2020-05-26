@@ -133,6 +133,7 @@ ol, ul {
     color:var(--main-color);
     text-transform: uppercase;
     text-align: center;
+    font-weight: 700;
 }
 
 .menu li:not(:last-child) {
@@ -258,9 +259,14 @@ ol, ul {
     display: flex;
     justify-content: space-between;
     margin-bottom: 28px;
-    width: 940px;
+    flex-basis: 940px;
 }
 
 .contact-form-input {
+    
+    flex-basis: 455px;
+}
+
+.contact-form-message {
     flex-basis: 455px;
 }
