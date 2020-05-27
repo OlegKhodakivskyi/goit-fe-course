@@ -80,6 +80,7 @@ img {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    min-height: 600px;
 }
 
 a {
@@ -125,6 +126,8 @@ ol, ul {
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
+    top: 25%;
+    transform: translateY(-50%);
 }
 
 .menu {
@@ -132,7 +135,7 @@ ol, ul {
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-    margin-bottom: 24.074%;
+    margin-bottom: 133px;
 }
 
 .sign-up {
@@ -140,10 +143,9 @@ ol, ul {
     color: var(--main-color);
     font-weight: 700;
     text-align: center;    
-    border: 2px solid;
+    border: 2px solid #ffffff;
     width: 92px;
     height: 36px;
-    border-color: var(--main-color);
     border-radius: 35%;
     background-color: transparent;
     cursor: pointer;
@@ -164,7 +166,8 @@ ol, ul {
 .logo { 
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
     font-family: var(--main-font);
     color: var(--main-color);
     font-weight: 700;
@@ -203,8 +206,14 @@ ol, ul {
     width: 282px;
     height: 42px;
     padding: 14px 38px;
+    cursor: pointer;
 }
 
+.head-find-btn:hover,
+.head-find-btn:focus  {
+    background-color: #ffffff;
+    color:#ff4e50;
+}
 
     /* SECTION_PARTNER */
 
@@ -218,17 +227,22 @@ ol, ul {
     color: var(--second-color);
     font-weight: 700;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .section-partners-list {
     display: flex;
-    justify-content: column;
     flex-wrap: wrap;
+    margin-bottom: 22px;
 }
 
 .section-partners-list-item {
     width: 220px;
     margin: 0 auto 22px;
+}
+
+.section-partners-list-item:last-child {
+    margin-bottom: 0px;
 }
 
 .partner-image-wrapper {
@@ -263,16 +277,177 @@ ol, ul {
     background-color: #ff4e50;
 }
 
+.icon-chemical::after {
+    background-image: url(../image/icons/icon-chemical.png);
+    background-color: #ffa507;
+}
+
+.icon-cup::after {
+    background-image: url(../image/icons/icon-cup.png);
+    background-color: #1cd7ad;
+}
+
+.icon-airplane::after {
+    background-image: url(../image/icons/icon-airplane.png);
+    background-color: #4e73db;
+}
+
 .partner {
     color: var(--second-color);
+    font-size: 14px;
     font-weight: 700;
     margin-bottom: 20px;
-    text-align: center;
 }
 
 .partner-description{
     font-family: var(--second-font);
     color: #666666;
     font-weight: 300;
-    text-align: center;
+}
+
+.see-more-btn {
+    font-family: var(--main-font);
+    font-weight: 700;
+    border: 2px solid #ff4e50;
+    color: #ff4e50;
+    background-color: var(--main-color);
+    width: 284px;
+    height: 44px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.see-more-btn:hover,
+.see-more-btn:focus  {
+    background-color: #ff4e50;
+    color:#ffffff;
+}
+
+    /* "MEDIA-TABLET */
+
+@media  (min-width: 768px) {
+    .container {
+    width: 660px;
+    min-height: auto;
+    }
+
+    .menu-header {
+    padding: 44px 0 0;
+    }
+
+    .menu-navigation {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    }
+
+    .hero-content {
+    margin: 0 auto;
+    top: 30%;
+    transform: translateY(-50%);
+    }
+    
+    .hero {
+    background-image: url(../image/background/tablet-background.jpg);
+    }
+
+    .logo {
+    margin-bottom: 0;
+    }
+
+    .moto {
+    font-size: 52px;
+    margin-bottom: 40px;
+    }
+
+    .moto-description {
+    font-size: 24px;
+    margin-bottom: 34px;
+    padding: 0;
+    }
+
+    .section-partners-title { 
+    margin-bottom: 40px;
+    }
+
+    .partner-image {
+    margin-bottom: 24px;
+    }
+
+    .section-partners-list-item {
+    width: 235px;
+    margin: 0 auto 60px;
+    }
+
+    .section-partners-list-item:nth-child(2n) {
+    margin-bottom: 0;
+    }
+
+    .section-partners-list-item:nth-last-child(-n+2) {
+    margin-right: 0;
+    }
+
+    .one { 
+    order: 1; 
+    }
+
+    .two {
+    order: 3;
+    }
+
+    .tree {
+    order: 2;
+    }
+
+    .four {
+    order: 4;
+    }
+
+    .section-partners-list  {
+    margin-bottom: 40px;
+    }
+
+    .section-partners {
+    padding: 72px 0 42px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+    width: 942px;
+    padding: 0;
+    }
+
+    .logo {
+    font-size: 20px;
+    }
+
+    .menu-header {
+    padding: 54px 250px;
+    }
+
+    .hero {
+    background-image: url(../image/background/desktop-background.jpg);
+    }
+
+    .hero-content {
+    top: 15%;
+    }
+    
+    .moto-description {
+    margin-bottom: 37px;
+    }
+
+    .section-partners-list-item {
+    width: 220px;
+    margin: 0;
+    }
+
+    .section-partners-list-item:not(:last-child) {
+    margin-right: 20px;
+    }
+
+    .section-partners {
+    padding: 72px 0 72px;
+    }
 }
