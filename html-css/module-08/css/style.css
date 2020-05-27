@@ -111,7 +111,8 @@ ol, ul {
 
 .hero {
     background-image: url(../image/background/mobile-background.jpg);
-    padding-bottom: 300px;
+    /* padding-bottom: 300px; */
+    background-size: cover;
 }
 
 .menu {
@@ -157,3 +158,6 @@ ol, ul {
     font-size: 20px;
 }
 
+.moto {
+
+}
