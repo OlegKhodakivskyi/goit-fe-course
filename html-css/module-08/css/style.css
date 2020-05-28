@@ -146,7 +146,7 @@ ol, ul {
     border: 2px solid #ffffff;
     width: 92px;
     height: 36px;
-    border-radius: 35%;
+    border-radius: 18px;
     background-color: transparent;
     cursor: pointer;
 }
@@ -233,6 +233,7 @@ ol, ul {
 .section-partners-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 22px;
 }
 
@@ -328,7 +329,7 @@ ol, ul {
 @media  (min-width: 768px) {
     .container {
     width: 660px;
-    min-height: auto;
+    padding: 0;
     }
 
     .menu-header {
@@ -376,7 +377,7 @@ ol, ul {
 
     .section-partners-list-item {
     width: 235px;
-    margin: 0 auto 60px;
+    margin: 0 20px 60px 0;
     }
 
     .section-partners-list-item:nth-child(2n) {
@@ -423,7 +424,7 @@ ol, ul {
     }
 
     .menu-header {
-    padding: 54px 250px;
+    padding: 54px;
     }
 
     .hero {
