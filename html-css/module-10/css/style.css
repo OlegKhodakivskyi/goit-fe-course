@@ -89,6 +89,7 @@ ol, ul {
 .navigation__link {
     font-family: var(--font-monts);
     color: var(--second-color);
+    transition: all 1000ms linear;
 }
 
 .navigation__link:hover,
@@ -98,7 +99,7 @@ ol, ul {
     visibility: visible;
 }
 
-.navigation__list-item:after {
+.navigation__link:after {
     display: block;
     content: "";
     width: 100%;
@@ -110,8 +111,8 @@ ol, ul {
     transition: all 1000ms linear;
 }
 
-.navigation__list-item:hover::after,
-.navigation__list-item:focus::after {
+.navigation__link:hover::after,
+.navigation__link:focus::after {
     opacity: 1;
     visibility: visible;
 }
@@ -218,3 +219,6 @@ ol, ul {
     background-color: rgba(0, 0, 0, 0);
     padding: 10px 25px;
 }
+
+    /* SERVICE-SECTION */ 
+
