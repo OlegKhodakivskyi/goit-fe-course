@@ -214,6 +214,19 @@ ol, ul {
     cursor: pointer;
 }
 
+/* ---------- */
+
+.btn:hover,
+.btn:focus {
+    fill:  #fce38a;
+}
+
+.shopping-cart:hover,
+.shopping-cart:focus {
+    fill: #fce38a; ;
+}
+/* ---------- */
+
 .shopping-cart {
     background-image: url(../image/svg-icon/icon-cart.svg);
 }
