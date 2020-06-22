@@ -8,7 +8,7 @@ do {
     alert(`Введите числовое значение.`);
     continue;
         } else if (input !== "" && input !== null) {
-        inputNumber = Number(input);
+        let inputNumber = Number(input);
         numbers.push(inputNumber);
         console.log(numbers);
     }
