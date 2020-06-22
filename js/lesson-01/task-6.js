@@ -2,7 +2,7 @@ let input;
 let total = 0;
 
 do {
-    input = prompt ("Ввведите число!")
+    input = prompt ("Введите число!")
 
     if (isNaN(input)) {
         console.log("Введите числовое значение");
