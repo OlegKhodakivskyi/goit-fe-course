@@ -7,8 +7,11 @@ const products = [
 
 const calculateTotalPrice = function(allProducts, productName) {
     let totalPrice= 0;
-    for (let i = 0; i < allProducts.length; i +=1) {
-        const entries = Object.values(allProducts[i]);        
+    let lengthCheck = allProducts.length;      // --- якщо немає додавання чи віднімання в циклі for, визначення довижини массива краще виноисти в окрему зміну. 
+
+    for (let i = 0; i < lengthCheck; i +=1) {
+        const entries = Object.values(allProducts[i]);  
+        // console.log(entries);      
         if (entries.includes(productName)) {
             totalPrice = entries[1] * entries[2];
         }
@@ -18,7 +21,6 @@ const calculateTotalPrice = function(allProducts, productName) {
 
 
 console.log(calculateTotalPrice(products, 'Радар')); // 5200
-
 console.log(calculateTotalPrice(products, 'Дроид')); // 2800
 
 
