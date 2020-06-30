@@ -86,3 +86,15 @@
 // 		console.log(arr[i]);
 // 	}
 // }
+
+let items = [
+    {name: "Ашот", age: 19},
+    {name: "Вася", age: 44},
+    {name: "Миша", age: 23},
+    {name: "Рома", age: 99},
+    {name: "Саша", age: 20},
+];
+
+// сортируем объекты внутри массива по свойству name (по алфавиту) 
+items.sort(( a, b ) => a.name > b.name)
+console.log( items ); // выводим в консоль результат сортировки 
