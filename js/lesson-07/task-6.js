@@ -5,15 +5,15 @@ let checkValid = (event => {
 		inputRef.classList.add("valid");
 		inputRef.classList.remove("invalid");
 	}
-	else if (event.target.value.length < 6) {
+	else if (event.target.value.length > 0 && event.target.value.length < 6) {
 		inputRef.classList.add("invalid");
 		inputRef.classList.remove("valid");
 	}
-	// else if (event.target.value.length === 0) {
-	// 	inputRef.classList.add("defult");
-	// 	inputRef.classList.remove("valid");
-	// 	inputRef.classList.remove("invalid");
-	// }
+	else if (event.target.value.length === 0) {
+		inputRef.classList.add("defult");
+		inputRef.classList.remove("valid");
+		inputRef.classList.remove("invalid");
+	}
 });
 
 inputRef.addEventListener('blur', checkValid);
