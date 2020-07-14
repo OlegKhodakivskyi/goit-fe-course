@@ -82,7 +82,7 @@ function slideImages(event) {
 
 function modalClose(event) {
   if (
-    event.target.nodeName === "IMG" || // - не работает закрытие картинки по overlay.
+    event.target.nodeName === "IMG" ||
     event.target === modalOverlay ||
     event.target.dataset.action === "close-lightbox" ||
     event.key === "Escape"
