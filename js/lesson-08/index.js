@@ -82,7 +82,6 @@ function slideImages(event) {
 
 function modalClose(event) {
   if (
-    event.target.nodeName === "IMG" ||
     event.target === modalOverlay ||
     event.target.dataset.action === "close-lightbox" ||
     event.key === "Escape"
